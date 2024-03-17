@@ -7,13 +7,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   </head>
 
     <body>
         <div class="container hero">
-            <figure>
-                <img src="assets/images/Marlies_bikepaking2.jpeg" alt="bikepacking">
-            </figure>
+
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <figure>
+                        <img class="left" src="assets/images/Marlies_bikepaking2.jpeg" alt="bikepacking">
+                    </figure>
+                </div>
+                <div class="swiper-slide">
+                    <figure>
+                        <img src="assets/images/Marlies_hiking.jpeg" alt="dolomites hiking">
+                    </figure>
+                </div>
+                <div class="swiper-slide">
+                    <figure>
+                        <img class="right" src="assets/images/Marlies_bikepacking.jpeg" alt="bikepacking">
+                    </figure>
+                </div>
+                </div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+        
+            </div>
+            
             <h1>Marlies Petter</h1>
             <h2>Front-end developer with a communication background</h2>
             <nav>
@@ -29,31 +56,36 @@
 
         <main>
             <div class="container">
-                <span class="divider"></span>
+                <span class="divider" id="about"></span>
             </div>
 
-            <section class="container" id="about">
+            <section class="container">
                 <h3 class="menu-item">About</h3>
-                <p>Here some text about me...</p>
+                <p>Hello, I'm Marlies, a front-end developer with a twist. A twist because l have a background in communication which adds value in front-end projects. I love to create new designs and turn them into captivating digital experiences.</p>
+                <p>Please feel free to delve into my latest projects and don't hesitate to reach out if you're interested in working with me.</p>
             </section>
 
             <div class="container">
-                <span class="divider"></span>
+                <span class="divider" id="projects"></span>
             </div>
 
-            <section class="container" id="projects">
+            <section class="container">
                 <h3 class="menu-item">Projects</h3>
             </section>
 
             <div class="container">
-                <span class="divider"></span>
+                <span class="divider" id="contact"></span>
             </div>
 
-            <section class="container" id="contact">
+            <section class="container">
                 <h3 class="menu-item">Contact</h3>
                 <a class="contact" href="mailto:marliespetter@hotmail.com">Send e-mail</a>
             </section>
             
         </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+
     </body>
   </html>
