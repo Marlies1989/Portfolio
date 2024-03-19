@@ -798,14 +798,19 @@ margin-block-end: var(--space-md);
   }
 }
 
-.contact {
-    font-family: var(--regular);
-    font-size: var(--step-0);
-    color: var(--black);
-    place-self: center;
-    grid-column: 2/12;
-    grid-row: 1;
+.contact-info {
+  grid-column: 2/-1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  & a {
+    display: flex;
+    justify-content: center;
+    & img {
+      scale: 2;
     }
+    }
+  }
 
 @media only screen and (min-width: 600px) {
     .hero {
