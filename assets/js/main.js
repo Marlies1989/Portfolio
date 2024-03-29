@@ -10,3 +10,17 @@ const swiper = new Swiper('.swiper', {
     },
   
   });
+
+  const swiperProjects = new Swiper('.swiper-projects', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: false,
+    slidesPerView: 1,
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+  });
