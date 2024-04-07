@@ -699,6 +699,9 @@
           & .left {
             object-position: left bottom;
           }
+          & .left-center {
+           object-position: left center;
+          }
           & .right {
             object-position: right;
           }
