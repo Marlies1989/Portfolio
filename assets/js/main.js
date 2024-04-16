@@ -1,7 +1,12 @@
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
-    loop: false,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      duration: 2000,
+      disableOnInteraction: false,
+    },
   
     // Navigation arrows
     navigation: {
