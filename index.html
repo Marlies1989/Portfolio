@@ -52,17 +52,17 @@
             <h2>Front-end developer with a twist.</h2>
             <nav>
                 <ul>
-                    <li class="ease-in-right"><a href="#about">About</a></li>
-                    <span class="ease-in-right">|</span>
-                    <li class="ease-in-right"><a href="#projects">Projects</a></li>
-                    <span class="ease-in-right">|</span>
-                    <li class="ease-in-right"><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <span>|</span>
+                    <li><a href="#projects">Projects</a></li>
+                    <span>|</span>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
 
         <main>
-            <div class="container ease-in-right">
+            <div class="container">
                 <span class="divider" id="about"></span>
             </div>
 
@@ -72,7 +72,7 @@
                 <p>Please feel free to delve into my latest projects and don't hesitate to reach out if you're interested in working with me.</p>
             </section>
 
-            <div class="container ease-in-right">
+            <div class="container">
                 <span class="divider" id="projects"></span>
             </div>
 
@@ -178,22 +178,22 @@
 
             </section>
 
-            <div class="container ease-in-right">
+            <div class="container">
                 <span class="divider" id="contact"></span>
             </div>
 
             <section class="container">
-                <h3 class="menu-item ease-in-right">Contact</h3>
+                <h3 class="menu-itemt">Contact</h3>
                 <div class="contact-info">
-                    <a class="ease-in-right" href="mailto:marliespetter@hotmail.com">
+                    <a href="mailto:marliespetter@hotmail.com">
                         <img src="./assets/images/mail.svg" alt="Mail Marlies Petter">
                     </a>
 
-                    <a class="ease-in-right" href="https://www.linkedin.com/in/marlies-petter/" target="_blank">
+                    <a href="https://www.linkedin.com/in/marlies-petter/" target="_blank">
                         <img src="./assets/images/linkedin.svg" alt="LinkedIn Marlies Petter">
                     </a>
 
-                    <a class="ease-in-right" href="https://github.com/Marlies1989" target="_blank">
+                    <a href="https://github.com/Marlies1989" target="_blank">
                         <img src="./assets/images/github.svg" alt="Github Marlies Petter">
                     </a>
                 </div>
@@ -208,11 +208,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
     <script>
-        gsap.from("h1", {
-            duration:2,
-            ease: "power1.inOut",
-            x: 125,
-            });
+        // gsap.from("h1", {
+        //     duration:2,
+        //     ease: "power1.inOut",
+        //     x: 125,
+        //     });
     
     gsap.registerPlugin(ScrollTrigger);
 
@@ -227,7 +227,7 @@
             gsap.from(batch, {
             duration:2,
             ease: "power1.inOut",
-            x: 500,
+            y: 100,
             stagger: .5,
             });
         }

@@ -810,7 +810,7 @@ margin-block-end: var(--space-md);
     display: flex;
     justify-content: center;
     & img {
-      scale: 2;
+      object-fit: scale-down;
     }
     }
   }
